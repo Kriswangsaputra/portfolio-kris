@@ -1,16 +1,8 @@
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import TentangSaya from "./TentangSaya";
-import KontakCard from "./Kontak";
-import MainJob from "./MainJob";
-import SupportJob from "./SupportJob";
-import Project from "./Project";
-import DesignGrafis from "./DesignGrafis";
-import { auroraConfig, dummyProjectFinal, finalDesignGrafis, project } from "./data";
-import SertifikatPelatihan from "./SertifikatPelatihan";
-import HubungiSaya from "./HubungiSaya";
-import Footer from "./Footer";
-import AuroraBackground from "./AuroraBackground";
+import AuroraBackground from "./components/AuroraBackground";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { auroraConfig } from "./data";
+
 
 function App(){
     return(
@@ -21,16 +13,6 @@ function App(){
                 )
             })}
             <Navbar />
-            <Hero />
-            <TentangSaya />
-            <KontakCard/>
-            <MainJob />
-            <SupportJob />
-            <Project project={project} tombol="Kunjungi Website" sectionName="Project"/>
-            <Project project={dummyProjectFinal} tombol="Lihat Selengkapnya" sectionName="Project Dummy"/>
-            <DesignGrafis sectionName="Design Grafis" data={finalDesignGrafis} />
-            <SertifikatPelatihan />
-            <HubungiSaya />
             <Footer />
         </div>
     )
