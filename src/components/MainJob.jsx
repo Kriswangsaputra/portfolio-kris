@@ -1,4 +1,4 @@
-import { mainJob } from "./data"
+import { mainJob } from "../data"
 
 function MainJob () {
     return (

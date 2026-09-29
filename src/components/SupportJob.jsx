@@ -1,4 +1,4 @@
-import { supportJob } from "./data";
+import { supportJob } from "../data";
 
 function SupportJob() {
     return (

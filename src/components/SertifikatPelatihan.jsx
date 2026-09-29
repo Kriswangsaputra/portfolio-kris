@@ -1,4 +1,4 @@
-import { finalSertifikatPelatihan } from "./data";
+import { finalSertifikatPelatihan } from "../data";
 
 function SertifikatPelatihan() {
     return(

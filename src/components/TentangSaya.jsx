@@ -1,4 +1,4 @@
-import { keahlian } from "./data";
+import { keahlian } from "../data";
 import { BiFolderOpen } from "react-icons/bi";
 import FotoProfile from "./assets/photo-profile.png";
 

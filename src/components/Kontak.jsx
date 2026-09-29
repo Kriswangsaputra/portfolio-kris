@@ -1,4 +1,4 @@
-import { Kontak } from "./data";
+import { Kontak } from "../data";
 
 function KontakCard() {
     return(
