@@ -19,19 +19,19 @@ function Home() {
                     <AuroraBackground key={item.id} warna={item.warna} animate={item.animate} />
                 )
             })}
+            <Navbar />
+            <Hero />
+            <TentangSaya />
+            <KontakCard/>
+            <MainJob />
+            <SupportJob />
+            <Project project={project} tombol="Kunjungi Website" sectionName="Project"/>
+            <Project project={dummyProjectFinal} tombol="Lihat Selengkapnya" sectionName="Project Dummy"/>
+            <DesignGrafis sectionName="Design Grafis" data={finalDesignGrafis} />
+            <SertifikatPelatihan />
+            <HubungiSaya />
+            <Footer />
         </div>
-        <Navbar />
-        <Hero />
-        <TentangSaya />
-        <KontakCard/>
-        <MainJob />
-        <SupportJob />
-        <Project project={project} tombol="Kunjungi Website" sectionName="Project"/>
-        <Project project={dummyProjectFinal} tombol="Lihat Selengkapnya" sectionName="Project Dummy"/>
-        <DesignGrafis sectionName="Design Grafis" data={finalDesignGrafis} />
-        <SertifikatPelatihan />
-        <HubungiSaya />
-        <Footer />
     )
 }
 
