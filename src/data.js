@@ -450,14 +450,6 @@ export const galeriDesign = [
         designGrafisImage:"banner-25.png"
     },
     {
-        id: 24,
-        designGrafisImage:"banner-24.png"
-    },
-    {
-        id: 25,
-        designGrafisImage:"banner-25.png"
-    },
-    {
         id: 26,
         designGrafisImage:"banner-26.png"
     },

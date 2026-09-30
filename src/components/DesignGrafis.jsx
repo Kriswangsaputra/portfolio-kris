@@ -11,6 +11,7 @@ function DesignGrafis(props) {
                         );
                 })}
             </div>
+            <Link to={"/galeri-design"} className="bg-accent text-text-primary rounded-md px-4 py-1">Lihat Selengkapnya</Link>
         </section>
     )
 }

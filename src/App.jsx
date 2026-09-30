@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import { auroraConfig } from "./data";
 import { Route, Routes } from "react-router";
+import GaleriDesign from "./pages/GaleriDesign";
 
 
 function App(){
@@ -16,7 +17,8 @@ function App(){
             })}
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home />}></Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/galeri-design" element={<GaleriDesign />} />
             </Routes>
             <Footer />
         </div>
