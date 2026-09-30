@@ -1,7 +1,9 @@
 import AuroraBackground from "./components/AuroraBackground";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import { auroraConfig } from "./data";
+import { Route, Routes } from "react-router";
 
 
 function App(){
@@ -13,6 +15,9 @@ function App(){
                 )
             })}
             <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+            </Routes>
             <Footer />
         </div>
     )

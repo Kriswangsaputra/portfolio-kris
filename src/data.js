@@ -295,6 +295,8 @@ export const dummyProjectFinal = dummyproject.map((item) => {
 
 // design grafis
 
+// ini untuk dihalaman utama
+
 const dataImage = import.meta.glob("./assets/designgrafis/*.{png,jpg,jpeg}", {eager:true});
 
 export const designgrafis = [
@@ -340,6 +342,291 @@ export const finalDesignGrafis = designgrafis.map((item) => {
     return {
         ...item,
         designGrafisImage: dataImage[`./assets/designgrafis/${item.designGrafisImage}`]?.default
+    };
+});
+
+// ini untuk dihalaman Galeri design
+const designImage = import.meta.glob("./assets/designgrafis/.*{png,jpg,jpeg}",{eager:true});
+
+export const galeriDesign = [
+    {
+        id: 1,
+        designGrafisImage:"banner-01.png"
+    },
+    {
+        id: 2,
+        designGrafisImage:"banner-02.png"
+    },
+    {
+        id: 3,
+        designGrafisImage:"banner-03.png"
+    },
+    {
+        id: 4,
+        designGrafisImage:"banner-04.png"
+    },
+    {
+        id: 5,
+        designGrafisImage:"banner-05.png"
+    },
+    {
+        id: 6,
+        designGrafisImage:"banner-06.png"
+    },
+    {
+        id: 7,
+        designGrafisImage:"banner-07.jpg"
+    },
+    {
+        id: 8,
+        designGrafisImage:"banner-08.png"
+    },
+    {
+        id: 9,
+        designGrafisImage:"banner-09.png"
+    },
+    {
+        id: 10,
+        designGrafisImage:"banner-10.png"
+    },
+    {
+        id: 11,
+        designGrafisImage:"banner-11.png"
+    },
+    {
+        id: 12,
+        designGrafisImage:"banner-12.png"
+    },
+    {
+        id: 13,
+        designGrafisImage:"banner-13.png"
+    },
+    {
+        id: 14,
+        designGrafisImage:"banner-14.png"
+    },
+    {
+        id: 15,
+        designGrafisImage:"banner-15.png"
+    },
+    {
+        id: 16,
+        designGrafisImage:"banner-16.png"
+    },
+    {
+        id: 17,
+        designGrafisImage:"banner-17.png"
+    },
+    {
+        id: 18,
+        designGrafisImage:"banner-18.png"
+    },
+    {
+        id: 19,
+        designGrafisImage:"banner-19.png"
+    },
+    {
+        id: 20,
+        designGrafisImage:"banner-20.png"
+    },
+    {
+        id: 21,
+        designGrafisImage:"banner-21.png"
+    },
+    {
+        id: 22,
+        designGrafisImage:"banner-22.png"
+    },
+    {
+        id: 23,
+        designGrafisImage:"banner-23.png"
+    },
+    {
+        id: 24,
+        designGrafisImage:"banner-24.png"
+    },
+    {
+        id: 25,
+        designGrafisImage:"banner-25.png"
+    },
+    {
+        id: 24,
+        designGrafisImage:"banner-24.png"
+    },
+    {
+        id: 25,
+        designGrafisImage:"banner-25.png"
+    },
+    {
+        id: 26,
+        designGrafisImage:"banner-26.png"
+    },
+    {
+        id: 27,
+        designGrafisImage:"banner-27.png"
+    },
+    {
+        id: 28,
+        designGrafisImage:"banner-28.png"
+    },
+    {
+        id: 29,
+        designGrafisImage:"banner-29.png"
+    },
+    {
+        id: 30,
+        designGrafisImage:"banner-30.png"
+    },
+    {
+        id: 31,
+        designGrafisImage:"banner-31.png"
+    },
+    {
+        id: 32,
+        designGrafisImage:"banner-32.png"
+    },
+    {
+        id: 33,
+        designGrafisImage:"banner-33.png"
+    },
+    {
+        id: 34,
+        designGrafisImage:"banner-34.png"
+    },
+    {
+        id: 35,
+        designGrafisImage:"banner-35.png"
+    },
+    {
+        id: 36,
+        designGrafisImage:"banner-36.png"
+    },
+    {
+        id: 37,
+        designGrafisImage:"banner-37.png"
+    },
+    {
+        id: 38,
+        designGrafisImage:"banner-38.png"
+    },
+    {
+        id: 39,
+        designGrafisImage:"banner-39.png"
+    },
+    {
+        id: 40,
+        designGrafisImage:"banner-40.png"
+    },
+    {
+        id: 41,
+        designGrafisImage:"banner-41.png"
+    },
+    {
+        id: 42,
+        designGrafisImage:"banner-42.png"
+    },
+    {
+        id: 43,
+        designGrafisImage:"banner-43.png"
+    },
+    {
+        id: 44,
+        designGrafisImage:"banner-44.png"
+    },
+    {
+        id: 45,
+        designGrafisImage:"banner-45.png"
+    },
+    {
+        id: 46,
+        designGrafisImage:"banner-46.png"
+    },
+    {
+        id: 47,
+        designGrafisImage:"banner-47.png"
+    },
+    {
+        id: 48,
+        designGrafisImage:"banner-48.png"
+    },
+    {
+        id: 49,
+        designGrafisImage:"banner-49.png"
+    },
+    {
+        id: 50,
+        designGrafisImage:"banner-50.png"
+    },
+    {
+        id: 51,
+        designGrafisImage:"banner-51.png"
+    },
+    {
+        id: 52,
+        designGrafisImage:"banner-52.png"
+    },
+    {
+        id: 53,
+        designGrafisImage:"banner-53.png"
+    },
+    {
+        id: 54,
+        designGrafisImage:"banner-54.png"
+    },
+    {
+        id: 55,
+        designGrafisImage:"banner-55.png"
+    },
+    {
+        id: 56,
+        designGrafisImage:"banner-56.png"
+    },
+    {
+        id: 57,
+        designGrafisImage:"banner-57.png"
+    },
+    {
+        id: 58,
+        designGrafisImage:"banner-58.png"
+    },
+    {
+        id: 59,
+        designGrafisImage:"banner-59.png"
+    },
+    {
+        id: 60,
+        designGrafisImage:"banner-60.png"
+    },
+    {
+        id: 61,
+        designGrafisImage:"banner-61.png"
+    },
+    {
+        id: 62,
+        designGrafisImage:"banner-62.png"
+    },
+    {
+        id: 63,
+        designGrafisImage:"banner-63.png"
+    },
+    {
+        id: 64,
+        designGrafisImage:"banner-64.png"
+    },
+    {
+        id: 65,
+        designGrafisImage:"banner-65.png"
+    },
+    {
+        id: 66,
+        designGrafisImage:"banner-66.png"
+    }
+];
+
+export const finalGaleriDesign = galeriDesign.map((item) => {
+    return {
+        ...item,
+        designGrafisImage: designImage[`./assets/designgrafis/${item.designGrafisImage}`]?.default
     };
 });
 
