@@ -346,7 +346,7 @@ export const finalDesignGrafis = designgrafis.map((item) => {
 });
 
 // ini untuk dihalaman Galeri design
-const designImage = import.meta.glob("./assets/designgrafis/.*{png,jpg,jpeg}",{eager:true});
+const designImage = import.meta.glob("./assets/designgrafis/*.{png,jpg,jpeg}",{eager:true});
 
 export const galeriDesign = [
     {
