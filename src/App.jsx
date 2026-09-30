@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { auroraConfig } from "./data";
 import { Route, Routes } from "react-router";
 import GaleriDesign from "./pages/GaleriDesign";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App(){
@@ -21,6 +22,7 @@ function App(){
                 <Route path="/galeri-design" element={<GaleriDesign />} />
             </Routes>
             <Footer />
+            <ScrollToTop />
         </div>
     )
 }

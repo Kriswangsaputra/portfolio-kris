@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function DesignGrafis(props) {
     return(
         <section className="flex flex-col px-24 py-12 gap-8 items-center">
@@ -11,7 +13,9 @@ function DesignGrafis(props) {
                         );
                 })}
             </div>
-            <Link to={"/galeri-design"} className="bg-accent text-text-primary rounded-md px-4 py-1">Lihat Selengkapnya</Link>
+            <Link to="/galeri-design" className="bg-accent text-text-primary rounded-md px-4 py-1">
+                Lihat Selengkapnya
+            </Link>
         </section>
     )
 }
