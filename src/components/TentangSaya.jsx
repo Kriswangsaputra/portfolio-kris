@@ -1,6 +1,7 @@
 import { keahlian } from "../data";
 import { BiFolderOpen } from "react-icons/bi";
 import FotoProfile from "../assets/photo-profile.png"
+import { Link } from "react-router";
 
 function TentangSaya(){
       return(
@@ -10,11 +11,11 @@ function TentangSaya(){
                     <p className="font-body text-text-secondary font-semibold text-2xl">Saya Seorang</p>
                     <h1 className="font-heading text-text-primary font-bold text-3xl">E-Commerce Staff</h1>
                     <p className="font-body text-base">Saya bekerja di PT Mitra Hub Indonesia dari Mei 2023 hingga saat ini. Pekerjaan saya berfokus pada web master CMS Wordpress dan Design Grafis. Saya terbiasa bekerja lintas divisi untuk membantu kebutuhan design pada masing masing divisi.</p>
-                    <button className="bg-accent text-text-primary rounded-2xl px-6 py-4">Lihat Selengkapnya</button>
-                    <div className="flex gap-4 p-8 bg-background border-accent border rounded-2xl items-center">
+                    <a href="/Kris_Wangsa_Putra_CV.pdf" download="Kris_Wangsa_Putra_CV.pdf" className="bg-accent text-text-primary rounded-2xl px-6 py-4">Unduh CV Saya</a>
+                    <Link to="/#project" className="flex gap-4 p-8 bg-background border-accent border rounded-2xl items-center">
                         <BiFolderOpen className="text-6xl text-accent"/>
                         <h2>Lihat Portfolio Saya</h2>
-                    </div>
+                    </Link>
                 </div>
                 <img src={FotoProfile} className="absolute w-lg bottom-0 left-135" />
                 <div className="flex flex-col gap-10"> 

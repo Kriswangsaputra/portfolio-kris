@@ -12,7 +12,7 @@ function Navbar(){
             <div className="font-heading font-semibold text-text-primary">Kris Wangsa Putra</div>
             <div className="flex gap-12">
                 <Link to="/#hubungi-saya" className="text-text-secondary font-body">Kontak</Link>
-                <button className="bg-accent text-text-primary rounded-md px-4 py-1">Unduh CV</button>
+                <a href="/Kris_Wangsa_Putra_CV.pdf" download="Kris_Wangsa_Putra_CV.pdf" className="bg-accent text-text-primary rounded-md px-4 py-1">Unduh CV</a>
             </div>
         </nav>
     )
