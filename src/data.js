@@ -16,22 +16,22 @@ export const navLinks = [
     {
         id: 1,
         navname: "Tentang Saya",
-        link: "#"
+        link: "/#tentang-saya"
     },
     {
         id: 2,
         navname: "Pengalaman Kerja",
-        link: "#"
+        link: "/#pengalaman-kerja"
     },
     {
         id: 3,
         navname: "Project",
-        link: "#"
+        link: "/#project"
     },
     {
         id: 4,
         navname: "Sertifikat & Pelatihan",
-        link: "#"
+        link: "/#sertifikat-pelatihan"
     }
 ];
 

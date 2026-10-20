@@ -12,16 +12,26 @@ import HubungiSaya from "../components/HubungiSaya";
 function Home() {
     return(
         <div>
-            <Hero />
-            <TentangSaya />
-            <KontakCard/>
-            <MainJob />
-            <SupportJob />
-            <Project project={project} tombol="Kunjungi Website" sectionName="Project"/>
-            <Project project={dummyProjectFinal} tombol="Lihat Selengkapnya" sectionName="Project Dummy"/>
-            <DesignGrafis sectionName="Design Grafis" data={finalDesignGrafis} />
-            <SertifikatPelatihan />
-            <HubungiSaya />
+            <section id="tentang-saya">
+                <Hero />
+                <TentangSaya />
+                <KontakCard/>
+            </section>
+            <section id="pengalaman-kerja">
+                <MainJob />
+                <SupportJob />
+            </section>
+            <section id="project">
+                <Project project={project} tombol="Kunjungi Website" sectionName="Project"/>
+                <Project project={dummyProjectFinal} tombol="Lihat Selengkapnya" sectionName="Project Dummy"/>
+                <DesignGrafis sectionName="Design Grafis" data={finalDesignGrafis} />
+            </section>
+            <section id="sertifikat-pelatihan">
+                <SertifikatPelatihan />
+            </section>
+            <section id="hubungi-saya">
+                <HubungiSaya />
+            </section>
         </div>
     )
 }

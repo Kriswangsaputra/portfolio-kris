@@ -13,7 +13,7 @@ function DesignGrafis(props) {
                         );
                 })}
             </div>
-            <Link to="/galeri-design" className="bg-accent text-text-primary rounded-md px-4 py-1">
+            <Link to="/galeri-design" className="bg-accent w-2xs px-6 py-4 mt-6 rounded-2xl text-center">
                 Lihat Selengkapnya
             </Link>
         </section>
