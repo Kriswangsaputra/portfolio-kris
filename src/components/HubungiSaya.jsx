@@ -6,6 +6,33 @@ function HubungiSaya() {
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [status, setStatus] = useState("Diam");
+    console.log(import.meta.env.VITE_FORMSPREE_URL);
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+        setStatus("Mengirim");
+
+        try {
+            const response = await fetch(import.meta.env.VITE_FORMSPREE_URL, {
+                method: "POST",
+                headers:{"Content-Type": "application/json", "Accept":"application/json"},
+                body: JSON.stringify({name, email, subject, message}),
+            });
+
+            if (response.ok) {
+                setStatus("Berhasil");
+                setName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            } else {
+                setStatus("Gagal");
+            }
+        } catch (error) {
+            setStatus("Gagal");
+        }
+    }
 
     return(
         <section className="grid grid-cols-2 px-24 py-12 gap-8 items-center">
@@ -29,10 +56,7 @@ function HubungiSaya() {
                 </div>
             </div>
             <div className="bg-card border border-accent rounded-2xl p-6">
-                <form action="" className="flex flex-col gap-6" onSubmit={(e) =>{
-                    e.preventDefault();
-                    console.log(name, email, subject, message)
-                }}>
+                <form action="" className="flex flex-col gap-6" onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-4">
                         <label htmlFor="name">Nama</label>
                         <input type="text" name="" id="name" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={name} onChange={(e) => setName(e.target.value)} />
