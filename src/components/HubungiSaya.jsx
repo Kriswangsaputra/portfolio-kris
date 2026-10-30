@@ -7,7 +7,6 @@ function HubungiSaya() {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [status, setStatus] = useState("Diam");
-    console.log(import.meta.env.VITE_FORMSPREE_URL);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -59,22 +58,28 @@ function HubungiSaya() {
                 <form action="" className="flex flex-col gap-6" onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-4">
                         <label htmlFor="name">Nama</label>
-                        <input type="text" name="" id="name" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={name} onChange={(e) => setName(e.target.value)} />
+                        <input type="text" name="" id="name" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={name} onChange={(e) => setName(e.target.value)} required/>
                     </div>
                     <div className="flex flex-col gap-4">
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="" id="email" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <input type="email" name="" id="email" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={email} onChange={(e) => setEmail(e.target.value)} required/>
                     </div>
                     <div className="flex flex-col gap-4">
                         <label htmlFor="subject">Subject</label>
-                        <input type="text" name="" id="subject" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                        <input type="text" name="" id="subject" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={subject} onChange={(e) => setSubject(e.target.value)} required/>
                     </div>
                     <div className="flex flex-col gap-4">
                         <label htmlFor="message">Pesan</label>
-                        <textarea name="" id="message" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                        <textarea name="" id="message" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                     </div>
                     <div>
-                        <button type="submit" className="bg-accent py-2 rounded-md w-full">Kirim</button>
+                        <button type="submit" className="bg-accent py-2 rounded-md w-full" disabled={status === "Mengirim"}>
+                            {status === "Mengirim"?"Mengirim...":"Kirim"}
+                        </button>
+                    </div>
+                    <div className="text-center">
+                        {status === "Berhasil" && <p className="text-green-500">Pesan berhasil dikirim!</p>}
+                        {status === "Gagal" && <p className="text-red-500">Terjadi kesalahan. Silakan coba lagi.</p>}
                     </div>
                 </form>
             </div>
