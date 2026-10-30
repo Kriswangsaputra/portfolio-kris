@@ -73,7 +73,7 @@ function HubungiSaya() {
                         <textarea name="" id="message" className="border border-accent rounded-lg px-4 py-2 outline-none focus:border-accent focus:ring-accent/30 focus:ring-2" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                     </div>
                     <div>
-                        <button type="submit" className="bg-accent py-2 rounded-md w-full" disabled={status === "Mengirim"}>
+                        <button type="submit" className="bg-accent py-2 rounded-md w-full cursor-pointer" disabled={status === "Mengirim"}>
                             {status === "Mengirim"?"Mengirim...":"Kirim"}
                         </button>
                     </div>
